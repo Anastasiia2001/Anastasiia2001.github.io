@@ -1,22 +1,22 @@
 # Your Name or Company
-title: Uni Kravitz
+title: Анастасія Галич
 
 # Description of your website. This is used for social sharing.
-description:  The beautiful website of artist, poet, craftsperson, cyclist, and avid juggler, Uni Kravitz.
+description:  The beautiful website of artist, poet, craftsperson, cyclist, and avid juggler.
 
 # A brief blurb about yourself
-content: Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
+content: Всім привіт, я лікар Анастасія Галич. Консультую онлайн.
 
 # Add your social links
 social:
-  - platform: github
-    url: https://github.com/brianmaierjr
+  - platform: telegram
+    url: https://t.me/ANASTASIIA_GALICHY/
   - platform: facebook
-    url: https://facebook.com/brianmaierjr
+    url: https://facebook.com/#
   - platform: twitter
-    url: https://twitter.com/brianmaierjr
+    url: https://twitter.com/#
   - platform: linkedin
-    url: brianmaierjr
+    url: #
 
 # General settings
 # url: http://brianmaierjr.github.com/uni
