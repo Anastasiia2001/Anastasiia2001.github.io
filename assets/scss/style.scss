@@ -1,35 +1,18 @@
----
----
+// Site base
+@import "base/normalize";
+@import "base/config";
+@import "base/mixins";
+@import "base/typography";
+@import "base/global";
 
-/*!------------------------------------------------------------------
-[MAIN STYLESHEET]
+// Modules
+@import "modules/buttons";
+// @import "modules/forms";
+// @import "modules/tables";
+@import "modules/links";
+@import "modules/lists";
 
-PROJECT:	Project Name
-VERSION:	Versoin Number
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-[TABLE OF CONTENTS]
--------------------------------------------------------------------*/
-
-@import 'variables';
-
-@import 'mixins';
-
-@import 'typography';
-
-@import 'buttons';
-
-@import 'common';
-
-@import 'templates/navigation';
-
-@import 'templates/hero-area';
-
-@import 'templates/homepage';
-
-@import 'templates/blog';
-
-@import 'templates/about';
-
-@import 'templates/portfolio';
+// Import Layouts
+@import "layouts/half";
+@import "layouts/full";
+@import "layouts/card";
