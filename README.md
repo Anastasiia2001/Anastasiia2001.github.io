@@ -1,58 +1,130 @@
-# Kross Jekyll
+![Uni Jekyll Theme](/assets/img/share.jpg)
 
-Kross Jekyll Creative Portfolio Template ported from [Kross HTML Template](https://themefisher.com/products/kross/)
+# Uni – A one-page Jekyll theme
 
-## Demo
+[View Half Demo](http://brianmaierjr.com/uni/) | [View Full Demo](http://brianmaierjr.com/uni/full) | [View Card Demo](http://brianmaierjr.com/uni/card)
 
-| Homepage  | About  | Blog  | Portfolio  | Contact  |
-|---|---|---|---|---|
-| ![Homepage](https://user-images.githubusercontent.com/37659754/58154295-1a9c5300-7c93-11e9-992c-ad8d2ff8d99f.png) | ![About](https://user-images.githubusercontent.com/37659754/58154317-28ea6f00-7c93-11e9-914b-b7e5f1cdab0e.png) | ![Blog](https://user-images.githubusercontent.com/37659754/58154339-369ff480-7c93-11e9-9568-53b7ebdc6b2d.png) | ![portfolio](https://user-images.githubusercontent.com/37659754/58154368-491a2e00-7c93-11e9-8900-f5a6abe0a61d.png) | ![contact](https://user-images.githubusercontent.com/37659754/58154403-57684a00-7c93-11e9-9cea-ea28253a6f6a.png) |
+## Features
 
-[Live Preview](http://demo.themefisher.com/kross).
+* Minimal, One-Page Design
+* Fast and responsive
+* Flexible
+* Built using these tools:
+  * GULP
+  * SASS
+  * BROWSERSYNC
+  * AUTOPREFIXER
+* A modular, type scale
+* 3 different layouts with additional options
+* Responsive Images for performance
+* Social Meta Tags
+
+## Browser Support
+
+This theme will look great and work in most newer browsers. If you see an issue please feel free to [contact me](mailto:brimaidesigns@gmail.com).
+
+---
 
 ## Setup
 
-To start your project, fork this repository
-After forking the repo, your site will be live immediately on your personal Github Pages account, e.g. `https://yourusername.github.io/your-repo-name/`.
+1. [Install Jekyll](http://jekyllrb.com)
+2. [Install Bundler](http://bundler.io/)
+3. Run `bundle install`
+4. Install gulp dependencies by running `npm install`
+5. Run Jekyll and watch files by running `bundle exec gulp`
 
-Make sure GitHub Pages is enabled for your repo. It might take some time for the site to propagate entirely.
+Please note that any changes made to the `config.yml` will require that you stop gulp and start it again.
 
-## Customize
+---
 
-Things you can customize in `_data/settings.yml` (no HTML/CSS):
+## Site/Layout Settings
 
-- Theme General Settings ( name, logo, email, phone, address )
-- Hero Section
-- About Section
-- Team Section
-- Skills Section
-- Experience Section
-- Education Section
-- Services Section
-- Portfolio Section
-- Testimonials Section
-- Client Slider Section
-- Contact Section
+The main settings can be found inside the `_config.yml` file:
 
-## Deployment
+* **title:** you or your company's name
+* **description:** description of your site that will be used when your site is shared or posted on social media
+* **sharing_image:** name of your image (example.jpg). This image should be placed in the `assets/img/` folder
+* **content:** a brief blurb about yourself
+* **url:** your url
+* **social** diverse social media usernames (optional)
+  * **platform**: display name for social media or external link
+  * **url**: destination for the link
+* **google_analytics** Google Analytics key (optional)
 
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
-I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll's website.
+---
 
-## Reporting Issues
+![Uni Jekyll Theme](layout--half.jpg)
 
-We use GitHub Issues as the official bug tracker for the **Kross Theme**. Please Search [existing issues](https://github.com/themefisher/kross-jekyll/issues). It’s possible someone has already reported the same problem.
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/kross-jekyll/issues/new)
+## Half Layout
 
-## Technical Support or Questions
+* **half_side:** which side of the page your content is on [left or right]
 
-If you have questions or need help integrating the product please [contact us](mailto:themefisher@gmail.com) instead of opening an issue.
+---
 
-<!-- licence -->
-## License
+![Uni Jekyll Theme](layout--full.jpg)
 
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+## Full layout
 
-**Code License:** Released under the [MIT](https://github.com/themefisher/kross-jekyll/blob/main/LICENSE) license.
+* **full_text_position:** where on the page the text will appear [left, center, or right]
 
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+---
+
+![Uni Jekyll Theme](layout--card.jpg)
+
+## Card layout
+
+The background image and other style customizations can be changed in `assets/scss/layouts/_card.scss`
+
+---
+
+## Further Customizations
+
+### Change Layout
+
+By default, Uni is set to use the `half` layout. To change the `layout` change the front matter in `index.html`
+
+For example, the layout below is using the `full` layout. The other options available are `half` and `card`.
+
+```
+---
+layout: full
+title: Uni – A one-page Jekyll theme
+---
+```
+
+### Styling
+
+While running `bundle exec gulp` modify any of the files in the `assets/scss/` folder and your browser will update automatically. No reload required!
+
+The layouts all have their own stylesheets found in `assets/scss/layouts/`. This is where images for each of the three layouts can be found. In addition, this is where you can change text color, layout, etc.
+
+#### Primary color
+
+The primary color is used for headings, accents, and buttons. It can be changed by modifying the `assets/scss/base/_config.scss` file.
+
+### Add Content
+
+Add content in `config.yml` or alter `index.html` and change `{{ content }}` to be whatever you want.
+
+### Imagery
+
+As stated above, the images are set in the respective stylesheets found in `assets/scss/layouts/`.
+
+We are using responsive images that require three different image sizes. This allows the browser to serve the appropriate image based on the screen size. Recommended image widths are:
+
+* #### Small: 768px wide
+* #### Medium: 1200px wide
+* #### Large: 1600px wide
+
+To replace the images, modify the names in the `responsivebackground` mixin as shown below.
+*Make sure to include the file extension!*
+
+```
+@include responsivebackground("half-sm.jpg", "half-md.jpg", "half-lg.jpg");
+```
+
+When uploading images please keep file size in mind. For optimizing, we recommend using [TinyPNG](https://tinypng.com) and [TinyJPG](https://tinyjpg.com).
+
+### Favicon
+
+To add your own favicon, replace the image found at `assets/img/favicon.png`.

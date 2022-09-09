@@ -1,34 +1,34 @@
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# Your Name or Company
+title: Uni Kravitz
 
-# Build settings
+# Description of your website. This is used for social sharing.
+description:  The beautiful website of artist, poet, craftsperson, cyclist, and avid juggler, Uni Kravitz.
+
+# A brief blurb about yourself
+content: Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
+
+# Add your social links
+social:
+  - platform: github
+    url: https://github.com/brianmaierjr
+  - platform: facebook
+    url: https://facebook.com/brianmaierjr
+  - platform: twitter
+    url: https://twitter.com/brianmaierjr
+  - platform: linkedin
+    url: brianmaierjr
+
+# General settings
+# url: http://brianmaierjr.github.com/uni
+# baseurl: "/uni" 
 markdown: kramdown
-permalink: pretty
-plugins:
-  - jekyll-sitemap
-compress_html:
-  clippings: all
-  comments: all
-  startings: [html, head, body]
+sharing_image: share.jpg
+google_analytics: "UA-58263416-1" # google analytics tracking
 
-# Pages Path
-defaults:
-  - scope:
-      path: "_pages"
-    values:
-      permalink: /:basename:output_ext
+#### LAYOUT OPTIONS #####
 
-include:
-  - _pages
+# Half layout
+half_side: right
 
-sass:
-  sass_dir: assets/scss
-  style: compressed
-
-# Exclude from processing.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.text
-  - README.md
-  - SECURITY.md
+# Full layout
+full_text_position: right # left, right or center
