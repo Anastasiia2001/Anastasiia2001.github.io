@@ -2,7 +2,7 @@
 title: Анастасія Галич
 
 # Description of your website. This is used for social sharing.
-description:  The beautiful website of artist, poet, craftsperson, cyclist, and avid juggler.
+description:  Сайт доктора Анастасії Сергіївни Галич.
 
 # A brief blurb about yourself
 content: Всім привіт, я лікар Анастасія Галич. Консультую онлайн.
@@ -12,9 +12,9 @@ social:
   - platform: telegram
     url: https://t.me/ANASTASIIA_GALICHY/
   - platform: facebook
-    url: https://facebook.com/#
-  - platform: twitter
-    url: https://twitter.com/#
+    url: #
+  - platform: tolza
+    url: https://tolza.com.ua/
   - platform: linkedin
     url: #
 
@@ -22,7 +22,7 @@ social:
 # url: http://brianmaierjr.github.com/uni
 # baseurl: "/uni" 
 markdown: kramdown
-sharing_image: share.jpg
+sharing_image: half-sm.jpg
 google_analytics: "UA-58263416-1" # google analytics tracking
 
 #### LAYOUT OPTIONS #####
